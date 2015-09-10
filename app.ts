@@ -1,0 +1,18 @@
+/**
+ * Created by sumantturlapati on 9/8/15.
+ */
+/// <reference path="typings/angular2/angular2.d.ts" />
+import {Component, View, bootstrap} from 'angular2/angular2';
+@Component({
+    selector: 'my-app'
+})
+@View({
+    template: '<h1> Hello {{name}}</h1>'
+})
+class MyAppComponent {
+    name: String;
+    constructor(){
+        this.name = 'Alice';
+    }
+}
+bootstrap(MyAppComponent);
